@@ -18,6 +18,7 @@ SECRET_KEY = "#qjlj#o+)_)olcr@wtjol=tke6&^ut!m6n#t5#a^^w8!9w$npc"
 
 # SECURITY WARNING: don"t run with debug turned on in production!
 DEBUG = True
+DEFAULT_AUTO_FIELD = "django.db.models.AutoField"
 
 ALLOWED_HOSTS: List[str] = []
 
@@ -30,7 +31,11 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "contragents",
+    "addresses",
     "sales",
+    "goods",
+    "hr",
     # if your app has other dependencies that need to be added to the site
     # they should be added here
 ]
